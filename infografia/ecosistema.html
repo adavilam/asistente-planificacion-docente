@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: El Ecosistema Completo de Planificación del Asistente Docente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .step-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .flow-arrow {
+            color: #fb923c;
+            font-size: 3rem;
+            line-height: 1;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-orange-500 mb-4">Ecosistema del Asistente Docente</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">Un ciclo integral para potenciar la labor docente: desde la planificación estratégica hasta la intervención personalizada y la mejora continua basada en datos.</p>
+        </header>
+
+        <main class="space-y-8">
+
+            <div class="step-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">1</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Planificar la Unidad</h2>
+                        </div>
+                        <p class="text-gray-600 mb-2"><strong>Comando:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!programacion</code></p>
+                        <p class="text-gray-600 mb-6">El Asistente Docente transforma una plantilla de unidad en una programación didáctica completa, seleccionando las estrategias y medios más efectivos para cada indicador de logro.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border">
+                        <h4 class="font-semibold text-center mb-2 text-gray-700">Producto: Programación Didáctica</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                                    <tr><th class="px-4 py-2">Indicador</th><th class="px-4 py-2">Estrategias</th><th class="px-4 py-2">Medios</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b"><td class="px-4 py-2">Explica origen...</td><td class="px-4 py-2 text-orange-600 font-semibold">Aprendizaje Basado en Pensamiento</td><td class="px-4 py-2 text-teal-600 font-semibold">Medios Digitales</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+
+            <div class="step-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">2</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Diseñar la Clase</h2>
+                        </div>
+                        <p class="text-gray-600 mb-2"><strong>Comando:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!plan</code></p>
+                        <p class="text-gray-600 mb-6">El Asistente Docente traduce la programación en planes de clase diarios detallados, estructurados en los tres momentos clave: inicio, desarrollo y culminación.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border">
+                        <h4 class="font-semibold text-center mb-2 text-gray-700">Producto: Plan de Clase Detallado</h4>
+                        <div class="flex justify-around text-center">
+                            <div><p class="text-4xl mb-1">▶️</p><p class="font-bold text-sm text-orange-700">Inicio</p></div>
+                            <div><p class="text-4xl mb-1">⚙️</p><p class="font-bold text-sm text-teal-700">Desarrollo</p></div>
+                            <div><p class="text-4xl mb-1">🏁</p><p class="font-bold text-sm text-amber-700">Cierre</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+
+            <div class="step-card">
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">3</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Crear la Evaluación</h2>
+                        </div>
+                        <p class="text-gray-600 mb-2"><strong>Comando:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!evaluacion</code></p>
+                        <p class="text-gray-600 mb-6">Diseña instrumentos de evaluación justos y coherentes, como rúbricas, para medir el aprendizaje de forma precisa en sus tres dimensiones: conceptual, procedimental y actitudinal.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border">
+                        <h4 class="font-semibold text-center mb-2 text-gray-700">Producto: Rúbrica Analítica</h4>
+                        <div class="chart-container h-60">
+                            <canvas id="evaluationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flow-arrow">↓</div>
+
+            <div class="step-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">4</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Reflexionar y Analizar</h2>
+                        </div>
+                         <p class="text-gray-600 mb-2"><strong>Comandos:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!reflexion</code> y <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!datadocente</code></p>
+                        <p class="text-gray-600 mb-6">El Asistente Docente facilita la reflexión cualitativa y la recolección de datos cuantitativos para entender qué funcionó, identificar tendencias y tomar decisiones pedagógicas basadas en evidencia.</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="improvementChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+
+            <div class="step-card">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">5</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Apoyo Proactivo</h2>
+                        </div>
+                        <p class="text-gray-600 mb-2"><strong>Comando:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!remedial</code></p>
+                        <p class="text-gray-600 mb-6">Como resultado del análisis, el Asistente Docente diseña planes de reforzamiento para estudiantes que necesitan apoyo, proponiendo nuevas estrategias y evaluaciones adaptadas para asegurar el dominio del aprendizaje.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border">
+                        <h4 class="font-semibold text-center mb-2 text-gray-700">Producto: Plan de Reforzamiento</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li><strong>Análisis:</strong> Dificultad conceptual o procedimental.</li>
+                            <li><strong>Nueva Estrategia:</strong> Cuestionario Guiado y Práctica Supervisada.</li>
+                            <li><strong>Nueva Evaluación:</strong> Lista de Cotejo simple y directa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+            
+            <div class="step-card">
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 text-orange-500 rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold mr-4">6</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Organizar y Cerrar</h2>
+                        </div>
+                        <p class="text-gray-600 mb-2"><strong>Comando:</strong> <code class="bg-gray-200 text-gray-800 px-2 py-1 rounded">!calendario</code></p>
+                        <p class="text-gray-600 mb-6">Finalmente, el Asistente Docente integra la planificación en la agenda del docente mediante un archivo CSV compatible con Google Calendar, cerrando el ciclo de mejora.</p>
+                    </div>
+                    <div class="bg-gray-900 text-white p-4 rounded-lg font-mono text-sm">
+                        <p>> Subject,Start Date,Start Time...</p>
+                        <p>> "Filosofía: Origen",28/07/2025,8:00 AM...</p>
+                        <p>> "Filosofía: Cosmovisiones",30/07/2025,8:00 AM...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flow-arrow">🔄</div>
+
+            <div class="step-card bg-orange-500 text-white">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">El Ciclo Virtuoso del Asistente Docente</h2>
+                <p class="text-center text-orange-100 mb-8 max-w-3xl mx-auto">Cada etapa alimenta a la siguiente, creando un sistema dinámico donde la planificación se perfecciona continuamente a través de la ejecución, la evaluación, el apoyo al estudiante y el análisis de datos.</p>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="cycleChart"></canvas>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-16">
+            <p class="text-gray-500">Documento generado por el Asistente Docente para el Colegio Parroquial Sagrado Corazón de Jesús.</p>
+        </footer>
+    </div>
+
+    <script>
+        const vibrantColors = ['#F97316', '#10B981', '#3B82F6', '#9333EA', '#F59E0B', '#EC4899'];
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+        
+        const evaluationChartCtx = document.getElementById('evaluationChart').getContext('2d');
+        new Chart(evaluationChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Conceptual', 'Procedimental', 'Actitudinal'],
+                datasets: [{
+                    label: 'Nivel de Logro',
+                    data: [4, 3, 5],
+                    backgroundColor: [vibrantColors[0], vibrantColors[1], vibrantColors[2]],
+                    borderWidth: 0,
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true, max: 5, ticks: { display: false } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+
+        const improvementChartCtx = document.getElementById('improvementChart').getContext('2d');
+        new Chart(improvementChartCtx, {
+            type: 'line',
+            data: {
+                labels: ['Unidad 1', 'Unidad 2', 'Unidad 3', 'Unidad 4', 'Unidad 5'],
+                datasets: [{
+                    label: 'Comprensión de Alumnos (1-5)',
+                    data: [3.8, 4.1, 4.0, 4.4, 4.6],
+                    backgroundColor: 'rgba(249, 115, 22, 0.2)',
+                    borderColor: '#F97316',
+                    pointBackgroundColor: '#F97316',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'Análisis de la Práctica Docente', font: { size: 16 }, color: '#334155' },
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    y: { beginAtZero: false, max: 5, ticks: { color: '#64748b' } },
+                    x: { ticks: { color: '#64748b' } }
+                }
+            }
+        });
+
+        const cycleChartCtx = document.getElementById('cycleChart').getContext('2d');
+        new Chart(cycleChartCtx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    '1. Planificar', 
+                    '2. Diseñar', 
+                    '3. Evaluar', 
+                    '4. Analizar',
+                    '5. Apoyar', 
+                    '6. Organizar'
+                ],
+                datasets: [{
+                    label: 'Ciclo de Planificación',
+                    data: [1, 1, 1, 1, 1, 1],
+                    backgroundColor: vibrantColors,
+                    hoverOffset: 4,
+                    borderColor: '#f97316',
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: 'white', font: {size: 12} } },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

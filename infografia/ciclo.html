@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: El Ciclo de Planificación con GEMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .flow-connector::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 4rem;
+            background-color: #3B82F6;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">El Ciclo Virtuoso de Planificación con GEMS</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Un ecosistema integrado para transformar la planificación en aprendizaje y mejora continua, paso a paso.</p>
+        </header>
+
+        <main class="relative">
+            <div class="space-y-16">
+
+                <section id="step1" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg flow-connector">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">1</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Planificar la Unidad (`!programacion`)</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">El punto de partida estratégico. Se define el mapa de ruta de la unidad didáctica a partir de una plantilla, que GEMS completa con las estrategias y medios más efectivos.</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="text-center font-medium text-gray-700 mb-2">📝 Tabla de Programación</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left text-gray-500">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-2">Indicador</th>
+                                        <th scope="col" class="px-4 py-2">Estrategias</th>
+                                        <th scope="col" class="px-4 py-2">Medios</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b">
+                                        <td class="px-4 py-2">Explica origen...</td>
+                                        <td class="px-4 py-2 font-semibold text-blue-600">`Aprendizaje Basado en Pensamiento`</td>
+                                        <td class="px-4 py-2 font-semibold text-green-600">`Medios Digitales`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step2" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg flow-connector">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">2</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Diseñar la Clase (`!plan`)</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">De la estrategia a la acción. Se traduce la planificación general en actividades diarias concretas, estructuradas en los tres momentos clave de la clase.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-4xl mb-2">▶️</p>
+                            <h3 class="font-bold text-blue-800">Inicio</h3>
+                            <p class="text-sm text-blue-700">Lluvia de ideas, preguntas guía.</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-4xl mb-2">⚙️</p>
+                            <h3 class="font-bold text-green-800">Desarrollo</h3>
+                            <p class="text-sm text-green-700">Creación de mapas, debate.</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <p class="text-4xl mb-2">🏁</p>
+                            <h3 class="font-bold text-yellow-800">Culminación</h3>
+                            <p class="text-sm text-yellow-700">Puesta en común, síntesis.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step3" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg flow-connector">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">3</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Crear la Evaluación (`!evaluacion`)</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Asegurar el aprendizaje. Se diseñan instrumentos claros y justos, como rúbricas, para medir el logro de los objetivos conceptuales, procedimentales y actitudinales.</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                         <p class="text-center font-medium text-gray-700 mb-2">📋 Rúbrica de Evaluación</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left text-gray-500">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-2">Criterio</th>
+                                        <th scope="col" class="px-4 py-2">Logrado</th>
+                                        <th scope="col" class="px-4 py-2">En Proceso</th>
+                                        <th scope="col" class="px-4 py-2">Iniciado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b">
+                                        <td class="px-4 py-2 font-semibold">Conceptual</td>
+                                        <td class="px-4 py-2">Define con precisión...</td>
+                                        <td class="px-4 py-2">Define la mayoría...</td>
+                                        <td class="px-4 py-2">Define con vaguedad...</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="px-4 py-2 font-semibold">Procedimental</td>
+                                        <td class="px-4 py-2">Mapa bien estructurado...</td>
+                                        <td class="px-4 py-2">Mapa claro...</td>
+                                        <td class="px-4 py-2">Mapa desorganizado...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step4" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg flow-connector">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">4</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Organizar el Tiempo (`!calendario`)</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Gestión eficiente. La planificación se integra directamente en la agenda del docente mediante la generación de un archivo CSV compatible con Google Calendar.</p>
+                    <div class="bg-gray-900 text-white p-4 rounded-lg font-mono text-sm">
+                        <p>> Subject,Start Date,Start Time...</p>
+                        <p>> "Filosofía: Origen",28/07/2025,8:00 AM...</p>
+                        <p>> "Filosofía: Cosmovisiones",30/07/2025,8:00 AM...</p>
+                    </div>
+                </section>
+
+                <section id="step5" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg flow-connector">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">5</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Reflexionar y Analizar (`!reflexion` & `!datadocente`)</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Mejora continua. GEMS facilita la reflexión cualitativa (Diario) y el análisis cuantitativo (Datos) para entender qué funcionó y cómo mejorar en el futuro.</p>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-center mb-2 text-gray-700">✍️ Reflexión Cualitativa</h3>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                                <li>¿Qué funcionó bien en la clase?</li>
+                                <li>¿Qué desafío encontré?</li>
+                                <li>¿Qué ajuste haré para la próxima vez?</li>
+                            </ul>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="improvementChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step6" class="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold mr-4">6</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Cerrar el Ciclo: Mejora Continua</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">El resultado final es un ciclo virtuoso. La reflexión y los datos de una unidad informan y enriquecen la planificación de la siguiente, creando un sistema dinámico de crecimiento profesional.</p>
+                    <div class="chart-container h-80 md:h-96">
+                         <canvas id="cycleChart"></canvas>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="text-center mt-16">
+            <p class="text-gray-500">Infografía generada por el Asistente GEMS.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const vibrantColors = ['#3B82F6', '#10B981', '#F97316', '#8B5CF6', '#EC4899', '#F59E0B'];
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+        
+        const improvementChartCtx = document.getElementById('improvementChart').getContext('2d');
+        new Chart(improvementChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4', 'Semana 5'],
+                datasets: [{
+                    label: 'Efectividad de Estrategia (1-5)',
+                    data: [3.5, 4, 4.2, 3.8, 4.5],
+                    backgroundColor: vibrantColors[0],
+                    borderColor: vibrantColors[0],
+                    borderWidth: 1,
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '📈 Análisis Cuantitativo de la Práctica',
+                        font: { size: 14 }
+                    },
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 5
+                    }
+                }
+            }
+        });
+
+        const cycleChartCtx = document.getElementById('cycleChart').getContext('2d');
+        new Chart(cycleChartCtx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    '1. Planificar Unidad', 
+                    '2. Diseñar Clase', 
+                    '3. Crear Evaluación', 
+                    '4. Organizar Tiempo', 
+                    '5. Reflexionar', 
+                    '6. Analizar Datos'
+                ],
+                datasets: [{
+                    label: 'Ciclo de Planificación',
+                    data: [1, 1, 1, 1, 1, 1],
+                    backgroundColor: vibrantColors,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
