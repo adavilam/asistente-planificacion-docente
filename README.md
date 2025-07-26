@@ -1,6 +1,12 @@
 Asistente de Planificación Docente con IA
 Este repositorio contiene un conjunto de herramientas diseñadas para asistir a docentes de primaria y secundaria en el proceso de planificación didáctica, utilizando un asistente de inteligencia artificial. El objetivo es hacer la planificación más eficiente, coherente y alineada con principios pedagógicos como el Diseño Inverso.
 
+📊 Recursos Visuales (Infografías) 
+Aquí encontrarás recursos visuales para comprender mejor las metodologías y flujos de trabajo propuestos.
+**El Ciclo de la Planificación Efectiva**: Infografía que detalla el ciclo completo de la planificación, desde el diagnóstico hasta la reflexión. (https://adavilam.github.io/asistente-planificacion-docente/infografia/ciclo.html)
+**Planifica con la Meta en Mente (Diseño Inverso)**: Una guía visual sobre el poderoso concepto de planificar comenzando por el final. (https://adavilam.github.io/asistente-planificacion-docente/infografia/index.html)
+**Ecosistema de Herramientas del Asistente**: Un mapa visual que muestra cómo interactúan todos los comandos (!programacion, !plan, etc.) para crear una planificación completa. (https://adavilam.github.io/asistente-planificacion-docente/infografia/ecosistema.html)
+
 📜 Descripción del Proyecto
 Este proyecto nace de la necesidad de optimizar el tiempo y la calidad de la planificación curricular. Las herramientas aquí presentes permiten a un docente interactuar con un modelo de lenguaje (como Gemini, ChatGPT, etc.) de manera estructurada para generar programaciones de unidad, planes de clase, instrumentos de evaluación y otros recursos pedagógicos.
 
