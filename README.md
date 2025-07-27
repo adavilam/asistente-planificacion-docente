@@ -3,8 +3,8 @@
 Este repositorio contiene un conjunto de herramientas diseñadas para asistir a docentes de primaria y secundaria en el proceso de planificación didáctica, utilizando un asistente de inteligencia artificial. El objetivo es hacer la planificación más eficiente, coherente y alineada con principios pedagógicos como el Diseño Inverso.
 
 📊 Recursos Visuales (Infografías)Aquí encontrarás recursos visuales para comprender mejor las metodologías y flujos de trabajo propuestos.
-Nota: Recuerda reemplazar [tu-usuario] y [tu-repositorio] con tus datos reales para que los enlaces funcionen.
-* **Planifica con la Meta en Mente (Diseño Inverso)** (https://adavilam.github.io/asistente-planificacion-docente/infografia/index.html)
+
+* **Planifica con la Meta en Mente** (https://adavilam.github.io/asistente-planificacion-docente/infografia/index.html)
 * **El Ciclo de la Planificación Efectiva** (https://adavilam.github.io/asistente-planificacion-docente/infografia/ciclo.html)
 * **Ecosistema de Herramientas del Asistente** (https://adavilam.github.io/asistente-planificacion-docente/infografia/ecosistema.html)
 
